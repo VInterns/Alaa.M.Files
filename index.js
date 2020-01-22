@@ -1,6 +1,7 @@
+require('dotenv').config();
 const express     = require('express');
 const app         = express();
-const port        = 3050;
+const port        =   process.env.PORT;
 const MongoClient = require('mongodb').MongoClient;
 const url         = "mongodb://localhost:27017/nodejsDB";
 var bodyParser = require('body-parser')
